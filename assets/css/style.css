@@ -1,0 +1,232 @@
+html {
+    background: #cdcdcd;
+    height: 100%;
+}
+
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    margin: 0px auto;
+    padding-bottom: 150px;
+    background: #cdcdcd;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: #5A84AD;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    color: #242445;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+
+/* Colors
+	shade of purple
+	color:#242445;
+	
+	shade of blueish
+	color:#5A84AD;
+
+
+ */
+
+
+/* INDEX.HTML */
+
+header {
+    height: 150px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-bottom: 2px solid #cdcdcd;
+}
+
+header .title {
+    width: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: #5A84AD;
+    color: white;
+    margin-left: 2.5%;
+}
+
+header .head-container {
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+header .title h1 {
+    margin: 0;
+    margin: 15px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 3.5%;
+}
+
+nav ul {
+    list-style-type: none;
+    -webkit-margin-before: 0px;
+    -webkit-padding-start: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+nav ul li a p {
+    font-size: 18px;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1200px;
+    height: 100%;
+    overflow: auto;
+}
+
+.container.clearfix::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#about,
+#about-bio-img {
+    float: left;
+}
+
+#about-bio-img {
+    /*word-wrap: break-word;*/
+    margin: 0px 20px 20px 0px;
+}
+
+#about,
+#form,
+#portfolio {
+    background: white;
+    width: 60%;
+    margin: 3.5%;
+    border: 1px solid #cdcdcd;
+    line-height: 1.8;
+}
+
+#about h1 {
+    color: #5A84AD;
+    border-bottom: 2px solid #cdcdcd;
+    padding-bottom: 20px;
+}
+
+#form h1 {
+    color: #5A84AD;
+    border-bottom: 2px solid #cdcdcd;
+    padding-bottom: 20px;
+}
+
+#portfolio h1 {
+    color: #5A84AD;
+    border-bottom: 2px solid #cdcdcd;
+    padding-bottom: 20px;
+}
+
+#about p {
+    word-break: break-all;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+#about .content {
+    margin: 40px;
+}
+
+#connect {
+	float: right;
+    background: white;
+    margin: 3.5%;
+    width: 25%;
+    border: 1px solid #cdcdcd;
+}
+
+#connect .content-contain {
+    margin: 20px 0px;
+}
+
+#connect h3 {
+    width: 75%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    color: #5A84AD;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+
+
+#connect .image-contain {
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#connect .icon {
+    height: 65px;
+    width: 65px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#connect .icon:hover {
+    transform: scale(1.1);
+}
+
+#connect .icon.stack {
+    height: 58px;
+    width: 58px;
+    padding: 3px;
+}
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    background: #242445;
+    border-top: 10px solid #5A84AD;
+}
+
+.footer p {
+    color: white;
+}
