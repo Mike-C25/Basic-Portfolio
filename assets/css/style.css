@@ -1,5 +1,5 @@
 html {
-    background: #cdcdcd;
+    background: #F1F1F1;
     height: 100%;
 }
 
@@ -9,8 +9,8 @@ body {
     height: 100%;
     min-height: 100%;
     margin: 0px auto;
-    padding-bottom: 100px;
-    background: #cdcdcd;
+    padding-bottom: 200px;
+    background: #F1F1F1;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -79,19 +79,23 @@ header .title {
 }
 
 header .head-container {
+	position: relative;
     margin: 0px auto;
     max-width: 1200px;
+    height: 150px;
+    background: transparent;
 }
 
 header .title h1 {
     margin: 0;
-    margin: 15px;
+    margin: 25px;
 }
 
 nav {
     position: absolute;
     bottom: 0;
     right: 0;
+    height: 70px;
     margin-right: 3.5%;
 }
 
@@ -103,7 +107,14 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    border-right: 1px solid #cdcdcd;
+}
+
+nav ul li:last-child{
+	padding-right:0;
+	border-right: none;
 }
 
 nav ul li a p {
@@ -113,13 +124,14 @@ nav ul li a p {
 .container {
     margin: 0px auto;
     max-width: 1200px;
-    height: 100%;
-    margin-bottom: 50px;
+    min-height: 100%;
+    margin-bottom: 60px;
+    overflow: auto;
 }
 
 .container.clearfix::after {
     content: "";
-    display: block;
+    display: table;
     clear: both;
 }
 
@@ -200,6 +212,7 @@ nav ul li a p {
     width: 75%;
     margin: 0px auto;
     margin-top: 20px;
+    text-align: center;
 }
 
 #connect .icon {
@@ -302,15 +315,72 @@ input[type='submit']:hover{
 }
 
 
+/* PORTFOLIO.HTML */
+
+#portfolio{
+	float: left;	
+}
+
+#portfolio h1{
+	width: 90%;
+	margin: 0px auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.image-container{
+	margin: 0px auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.card-container{
+	position: relative;
+	width: 50%;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.card-container img{
+	margin: 0px auto;
+	width: 80%;
+}
+
+.card-container .cover{
+	margin: 0px auto;
+	height: 20%;
+	width: 80%;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	background: #5A84AD;
+
+}
+
+.card-container .cover p{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
 .footer {
     position: absolute;
     left: 0;
     right: 0;
     height: 100px;
-    background: #242445;
+    background: grey;
     border-top: 10px solid #5A84AD;
 }
 
 .footer p {
     color: white;
+    display: flex;
+    align-items: center;
+    height: 100px;	
+    margin-left: 3.5%;	
 }
