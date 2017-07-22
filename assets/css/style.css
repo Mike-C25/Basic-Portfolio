@@ -9,7 +9,7 @@ body {
     height: 100%;
     min-height: 100%;
     margin: 0px auto;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     background: #cdcdcd;
     font-family: "Open Sans", sans-serif;
 }
@@ -46,6 +46,7 @@ p {
 
 
 
+
 /* Colors
 	shade of purple
 	color:#242445;
@@ -74,7 +75,7 @@ header .title {
     bottom: 0;
     background: #5A84AD;
     color: white;
-    margin-left: 2.5%;
+    margin-left: 3.5%;
 }
 
 header .head-container {
@@ -102,7 +103,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0px 10px;
+    padding: 20px 10px;
 }
 
 nav ul li a p {
@@ -113,13 +114,13 @@ nav ul li a p {
     margin: 0px auto;
     max-width: 1200px;
     height: 100%;
-    overflow: auto;
+    margin-bottom: 50px;
 }
 
-.container.clearfix::after{
-	content:"";
-	display: block;
-	clear: both;
+.container.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 #about,
@@ -146,12 +147,15 @@ nav ul li a p {
     color: #5A84AD;
     border-bottom: 2px solid #cdcdcd;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #form h1 {
     color: #5A84AD;
     border-bottom: 2px solid #cdcdcd;
-    padding-bottom: 20px;
+    padding:20px 0px;
+    width: 90%;
+    margin:0px auto;
 }
 
 #portfolio h1 {
@@ -171,7 +175,7 @@ nav ul li a p {
 }
 
 #connect {
-	float: right;
+    float: right;
     background: white;
     margin: 3.5%;
     width: 25%;
@@ -201,6 +205,7 @@ nav ul li a p {
 #connect .icon {
     height: 65px;
     width: 65px;
+    cursor: pointer;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -217,12 +222,91 @@ nav ul li a p {
 }
 
 
+
+/*FORM.HTML*/
+
+#form {
+    float: left;
+}
+
+
+label,
+input{
+	display: block;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 150px;
+    margin: 0;
+	border: 1px solid #cdcdcd;
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box;
+    /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+textarea{
+	height: 200px;
+	width: 90%;
+	margin: 0px auto;
+	font-size: 16px;
+	padding: 5px;
+}
+
+label{
+	width: 90%;
+	margin: 0px auto;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='email']{
+	width: 90%;
+	margin:0px auto;
+	padding: 10px;
+	font-size:16px;
+}
+
+.center-msg{
+	text-align: center;
+}
+.center-button{
+	width: 90%;
+	margin: 0px auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+input[type='submit']{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #5A84AD;
+	color: white;
+	border: 2px solid #5A84AD;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+input[type='submit']:hover{
+	transition: all .2s ease-in-out;
+	background: white;
+	color: #5A84AD;
+}
+
+
 .footer {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
-    height: 150px;
+    height: 100px;
     background: #242445;
     border-top: 10px solid #5A84AD;
 }
