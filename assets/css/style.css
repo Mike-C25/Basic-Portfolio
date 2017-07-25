@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background: #CDCDCD; }
+  background: #F2F2F2; }
 
 /* 
 font-family: 'Quattrocento', serif;
@@ -32,37 +32,22 @@ body {
 a {
   font-size: 16px;
   font-weight: bold;
-  -webkit-transition: font .2s ease-in-out;
-  -o-transition: font .2s ease-in-out;
-  transition: font .2s ease-in-out;
   text-decoration: none;
   color: #39A0ED; }
   a:hover {
     color: #EE6352; }
 
 h1 {
-  font-size: 26px;
-  -webkit-transition: font .2s ease-in-out;
-  -o-transition: font .2s ease-in-out;
-  transition: font .2s ease-in-out; }
+  font-size: 26px; }
 
 h2 {
-  font-size: 24px;
-  -webkit-transition: font .2s ease-in-out;
-  -o-transition: font .2s ease-in-out;
-  transition: font .2s ease-in-out; }
+  font-size: 24px; }
 
 h3 {
-  font-size: 20px;
-  -webkit-transition: font .2s ease-in-out;
-  -o-transition: font .2s ease-in-out;
-  transition: font .2s ease-in-out; }
+  font-size: 20px; }
 
 p {
-  font-size: 16px;
-  -webkit-transition: font .2s ease-in-out;
-  -o-transition: font .2s ease-in-out;
-  transition: font .2s ease-in-out; }
+  font-size: 16px; }
 
 @media (max-width: 768px) {
   a {
@@ -90,8 +75,13 @@ header {
     margin-left: 3.5%;
     transition: background .33s ease-in-out;
     text-align: center;
-    color: white;
-    background: #39A0ED; }
+    color: white; }
+    header .title.g {
+      background: #59CD90; }
+    header .title.b {
+      background: #39A0ED; }
+    header .title.y {
+      background: #EEC25E; }
   header .head-container {
     position: relative;
     max-width: 1200px;
@@ -208,12 +198,7 @@ nav {
   #connect .icon {
     width: 65px;
     height: 65px;
-    cursor: pointer;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
-    #connect .icon:hover {
-      transform: scale(1.1); }
+    cursor: pointer; }
     #connect .icon.stack {
       width: 58px;
       height: 58px;
@@ -316,7 +301,7 @@ input[type='submit'] {
   width: 50%;
   margin-top: 30px;
   margin-bottom: 30px; }
-  .card-container:hover .cover p {
+  .card-container:hover .cover {
     background: #F79D84; }
   .card-container img {
     width: 80%;
@@ -330,7 +315,8 @@ input[type='submit'] {
     width: 80%;
     height: 20%;
     margin: 0 auto;
-    background: #EE6352; }
+    background: #EE6352;
+    transition: background-color .33s ease-in-out; }
     .card-container .cover p {
       display: flex;
       height: 100%;
