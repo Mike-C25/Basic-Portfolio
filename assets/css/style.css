@@ -1,6 +1,7 @@
 html {
     background: #F1F1F1;
     height: 100%;
+    background-image: url("../images/natural_paper.png")
 }
 
 
@@ -10,9 +11,16 @@ body {
     min-height: 100%;
     margin: 0px auto;
     padding-bottom: 200px;
-    background: #F1F1F1;
-    font-family: "Open Sans", sans-serif;
+    background: transparent;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1.1px;
+    line-height: 1.4;
 }
+
+
+
+
+
 
 a {
     color: #5A84AD;
@@ -30,19 +38,58 @@ a:hover {
 
 h1 {
     font-size: 26px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 h2 {
     font-size: 24px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 h3 {
     font-size: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 p {
     font-size: 16px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
+
+
+@media (max-width: 768px) {
+    a {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
 
 
 
@@ -66,6 +113,7 @@ header {
     background: white;
     position: relative;
     border-bottom: 2px solid #cdcdcd;
+    font-family: 'Comfortaa', cursive;
 }
 
 header .title {
@@ -76,19 +124,21 @@ header .title {
     background: #5A84AD;
     color: white;
     margin-left: 3.5%;
+    transition: all .33s ease-in-out;
 }
 
 header .head-container {
-	position: relative;
+    position: relative;
     margin: 0px auto;
     max-width: 1200px;
     height: 150px;
     background: transparent;
 }
 
-header .title h1 {
+header .title h2 {
     margin: 0;
     margin: 25px;
+    font-family: 'Comfortaa', cursive;
 }
 
 nav {
@@ -106,15 +156,20 @@ nav ul {
 }
 
 nav ul li {
+    cursor: pointer;
     display: inline-block;
     padding: 0px 10px;
     margin: 20px 0px;
     border-right: 1px solid #cdcdcd;
 }
 
-nav ul li:last-child{
-	padding-right:0;
-	border-right: none;
+nav ul li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+nav ul li a {
+    cursor: pointer;
 }
 
 nav ul li a p {
@@ -165,9 +220,9 @@ nav ul li a p {
 #form h1 {
     color: #5A84AD;
     border-bottom: 2px solid #cdcdcd;
-    padding:20px 0px;
+    padding: 20px 0px;
     width: 90%;
-    margin:0px auto;
+    margin: 0px auto;
 }
 
 #portfolio h1 {
@@ -202,6 +257,7 @@ nav ul li a p {
     width: 75%;
     margin: 0px auto;
     padding: 10px 0px;
+	text-align: center;
     color: #5A84AD;
     border-bottom: 1px solid #cdcdcd;
 }
@@ -209,7 +265,7 @@ nav ul li a p {
 
 
 #connect .image-contain {
-    width: 75%;
+    width: 100%;
     margin: 0px auto;
     margin-top: 20px;
     text-align: center;
@@ -224,6 +280,15 @@ nav ul li a p {
     transition: all .2s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    #connect .icon {
+        display: block;
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 #connect .icon:hover {
     transform: scale(1.1);
 }
@@ -236,6 +301,13 @@ nav ul li a p {
 
 
 
+
+
+
+
+
+
+
 /*FORM.HTML*/
 
 #form {
@@ -244,8 +316,8 @@ nav ul li a p {
 
 
 label,
-input{
-	display: block;
+input {
+    display: block;
 }
 
 input,
@@ -254,7 +326,7 @@ select,
 button {
     width: 150px;
     margin: 0;
-	border: 1px solid #cdcdcd;
+    border: 1px solid #cdcdcd;
     -webkit-box-sizing: border-box;
     /* For legacy WebKit based browsers */
     -moz-box-sizing: border-box;
@@ -262,110 +334,136 @@ button {
     box-sizing: border-box;
 }
 
-textarea{
-	height: 200px;
-	width: 90%;
-	margin: 0px auto;
-	font-size: 16px;
-	padding: 5px;
+textarea {
+    height: 200px;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 16px;
+    padding: 5px;
 }
 
-label{
-	width: 90%;
-	margin: 0px auto;
-	text-align: left;
-	margin-top: 20px;
-	margin-bottom: 10px;
+label {
+    width: 90%;
+    margin: 0px auto;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 input[type='text'],
-input[type='email']{
-	width: 90%;
-	margin:0px auto;
-	padding: 10px;
-	font-size:16px;
+input[type='email'] {
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.center-msg{
-	text-align: center;
-}
-.center-button{
-	width: 90%;
-	margin: 0px auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.center-msg {
+    text-align: center;
 }
 
-input[type='submit']{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background: #5A84AD;
-	color: white;
-	border: 2px solid #5A84AD;
-	padding: 10px;
-	font-size: 16px;
-	cursor: pointer;
+.center-button {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-input[type='submit']:hover{
-	transition: all .2s ease-in-out;
-	background: white;
-	color: #5A84AD;
+input[type='submit'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #5A84AD;
+    color: white;
+    border: 2px solid #5A84AD;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
+
+input[type='submit']:hover {
+    transition: all .2s ease-in-out;
+    background: white;
+    color: #5A84AD;
+}
+
+
+
+
+
+
+
 
 
 /* PORTFOLIO.HTML */
 
-#portfolio{
-	float: left;	
+#portfolio {
+    float: left;
 }
 
-#portfolio h1{
-	width: 90%;
-	margin: 0px auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
+#portfolio h1 {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.image-container{
-	margin: 0px auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	text-align: center;
+.image-container {
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.card-container{
-	position: relative;
-	width: 50%;
-	float: left;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.card-container {
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
-.card-container img{
-	margin: 0px auto;
-	width: 80%;
+.card-container:hover .cover p {
+    background: #242445;
 }
 
-.card-container .cover{
-	margin: 0px auto;
-	height: 20%;
-	width: 80%;
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-	background: #5A84AD;
-
+.card-container img {
+    margin: 0px auto;
+    width: 80%;
+    transition: all .4s ease-in-out;
 }
 
-.card-container .cover p{
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
+.card-container .cover {
+    margin: 0px auto;
+    height: 20%;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background: #5A84AD;
+}
+
+@media (max-width:520px) {
+    .card-container .cover {
+        height: 40%;
+        bottom: 0px;
+    }
+}
+
+.card-container .cover p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width:520px) {
+    .card-container .cover p {
+        font-size: 10px;
+    }
 }
 
 .footer {
@@ -373,7 +471,7 @@ input[type='submit']:hover{
     left: 0;
     right: 0;
     height: 100px;
-    background: grey;
+    background: #85847E;
     border-top: 10px solid #5A84AD;
 }
 
@@ -381,6 +479,6 @@ input[type='submit']:hover{
     color: white;
     display: flex;
     align-items: center;
-    height: 100px;	
-    margin-left: 3.5%;	
+    height: 100px;
+    margin-left: 3.5%;
 }
