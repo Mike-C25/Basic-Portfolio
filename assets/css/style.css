@@ -77,11 +77,12 @@ header {
     -moz-transition: background-color 1s ease-in-out;
     -webkit-transition: background-color 1s ease-in-out;
     text-align: center;
-    color: white; }
-    header .title.g {
-      background: #59CD90; }
+    color: white;
+    background: white; }
     header .title.b {
       background: #39A0ED; }
+    header .title.g {
+      background: #59CD90; }
     header .title.y {
       background: #EEC25E; }
   header .head-container {

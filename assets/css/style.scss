@@ -5,6 +5,7 @@ html {
 
 
 
+
 /* 
 font-family: 'Quattrocento', serif;
 font-family: 'Quattrocento Sans', sans-serif; 
@@ -105,11 +106,12 @@ header {
         -webkit-transition: background-color 1s ease-in-out;
         text-align: center;
         color: white;
-        &.g {
-            background: #59CD90;
-        }
+        background: white;
         &.b {
             background: #39A0ED;
+        }
+        &.g {
+            background: #59CD90;
         }
         &.y {
             background: #EEC25E;
