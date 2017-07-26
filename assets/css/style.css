@@ -73,7 +73,9 @@ header {
     bottom: 0;
     width: auto;
     margin-left: 3.5%;
-    transition: background .33s ease-in-out;
+    transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out;
     text-align: center;
     color: white; }
     header .title.g {
@@ -142,7 +144,9 @@ nav {
   float: left;
   margin: 0 20px 20px 0; }
 
-#about, #form, #portfolio {
+#about,
+#form,
+#portfolio {
   line-height: 1.8;
   width: 60%;
   margin: 3.5%;
@@ -183,13 +187,20 @@ nav {
   background: white; }
   #connect .content-contain {
     margin: 20px 0; }
-  #connect h3 {
-    width: 75%;
-    margin: 0 auto;
-    padding: 10px 0;
-    text-align: center;
-    color: #39A0ED;
-    border-bottom: 1px solid #cdcdcd; }
+    #connect .content-contain h3 {
+      width: 75%;
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      border-bottom: 1px solid #cdcdcd;
+      transition: color 1s ease-in-out; }
+      #connect .content-contain h3.g {
+        color: #59CD90; }
+      #connect .content-contain h3.b {
+        color: #39A0ED; }
+      #connect .content-contain h3.y {
+        color: #EEC25E; }
   #connect .image-contain {
     width: 100%;
     margin: 0 auto;
@@ -226,7 +237,9 @@ input {
   margin: 0;
   border: 1px solid #cdcdcd; }
 
-textarea, select, button {
+textarea,
+select,
+button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -252,7 +265,8 @@ input[type='text'], input[type='email'] {
   font-size: 16px;
   width: 90%;
   margin: 0 auto;
-  padding: 10px; }
+  padding: 10px;
+  color: rgba(205, 205, 205, 0.95); }
 
 .center-msg {
   text-align: center; }
