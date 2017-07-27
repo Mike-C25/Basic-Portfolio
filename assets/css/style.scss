@@ -1,30 +1,44 @@
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
 html {
     height: 100%;
     background: #F2F2F2;
 }
 
 
-
-
-
-
-
 /* 
 font-family: 'Quattrocento', serif;
 font-family: 'Quattrocento Sans', sans-serif; 
 
+$yel = #EEC25E;
+
+$sal = #F79D84;
+
+$gr = #59CD90;
+
+$bl = #39A0ED;
+
+$r = #EE6352;
+
 COLORS: 
-#EEC25E
-
-#F79D84
-
-#59CD90
-
-#39A0ED
-
-#EE6352
 
 */
+
+$yel : #EEC25E;
+
+$sal : #F79D84;
+
+$gr : #59CD90;
+
+$bl : #39A0ED;
+
+$r : #EE6352;
 
 body {
     font-family: 'Quattrocento', serif;
@@ -44,9 +58,9 @@ a {
     // -o-transition: font .2s ease-in-out;
     // transition: font .2s ease-in-out;
     text-decoration: none;
-    color: #39A0ED;
+    color: $bl;
     &:hover {
-        color: #EE6352;
+
     }
     &:active {}
     &:focus {
@@ -115,13 +129,13 @@ header {
         color: white;
         background: white;
         &.b {
-            background: #39A0ED;
+            background: $bl;
         }
         &.g {
-            background: #59CD90;
+            background: $gr;
         }
         &.y {
-            background: #EEC25E;
+            background: $yel;
         }
     }
     .head-container {
@@ -159,13 +173,13 @@ nav {
                 border-right: 0;
             }
             &:nth-child(3n+1) a {
-                color: #EEC25E;
+                color: $yel;
             }
             &:nth-child(3n+2) a {
-                color: #59CD90;
+                color: $gr;
             }
             &:nth-child(3n+3) a {
-                color: #39A0ED;
+                color: $bl;
             }
             a {
                 cursor: pointer;
@@ -213,7 +227,7 @@ nav {
 #about h1 {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: #EEC25E;
+    color: $yel;
     border-bottom: 2px solid #cdcdcd;
 }
 
@@ -221,13 +235,13 @@ nav {
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
-    color: #39A0ED;
+    color: $bl;
     border-bottom: 2px solid #cdcdcd;
 }
 
 #portfolio h1 {
     padding-bottom: 20px;
-    color: #59CD90;
+    color: $gr;
     border-bottom: 2px solid #cdcdcd;
 }
 
@@ -257,13 +271,13 @@ nav {
             text-align: center;
             border-bottom: 1px solid #cdcdcd;
             &.g {
-                color: #59CD90;
+                color: $gr;
             }
             &.b {
-                color: #39A0ED;
+                color: $bl;
             }
             &.y {
-                color: #EEC25E;
+                color: $yel;
             }
         }
     }
@@ -335,7 +349,7 @@ textarea {
     height: 200px;
     margin: 0 auto;
     padding: 5px;
-    color: #39A0ED;
+    color: $bl;
 }
 
 label {
@@ -353,7 +367,7 @@ input {
         width: 90%;
         margin: 0 auto;
         padding: 10px;
-        color: #39A0ED;
+        color: $bl;
         &::placeholder {
             color: rgba(205, 205, 205, .95);
         }
@@ -376,8 +390,8 @@ input[type='submit'] {
     padding: 10px;
     cursor: pointer;
     color: white;
-    border: 2px solid #39A0ED;
-    background: #39A0ED;
+    border: 2px solid $bl;
+    background: $bl;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -385,7 +399,7 @@ input[type='submit'] {
     /* text-transform: uppercase; */
     &:hover {
         transition: all .2s ease-in-out;
-        color: #39A0ED;
+        color: $bl;
         background: white;
     }
 }
@@ -415,7 +429,7 @@ input[type='submit'] {
     margin-top: 30px;
     margin-bottom: 30px;
     &:hover .cover {
-        background: #F79D84;
+        background: lighten($gr,20%);
     }
     img {
         width: 80%;
@@ -430,7 +444,7 @@ input[type='submit'] {
         width: 80%;
         height: 20%;
         margin: 0 auto;
-        background: #EE6352;
+        background: $gr;
         transition: background-color .33s ease-in-out;
         p {
             display: flex;
@@ -464,13 +478,13 @@ input[type='submit'] {
     background: white;
     transition: background-color 1s ease-in-out;
     &.b {
-        background: #39A0ED;
+        background: $bl;
     }
     &.g {
-        background: #59CD90;
+        background: $gr;
     }
     &.y {
-        background: #EEC25E;
+        background: $yel;
     }
     p {
         display: flex;
