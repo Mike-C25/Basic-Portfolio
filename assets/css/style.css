@@ -36,6 +36,8 @@ a {
   color: #39A0ED; }
   a:hover {
     color: #EE6352; }
+  a:focus {
+    outline: none; }
 
 h1 {
   font-size: 26px; }
@@ -73,9 +75,9 @@ header {
     bottom: 0;
     width: auto;
     margin-left: 3.5%;
-    transition: background-color 1s ease-in-out;
-    -moz-transition: background-color 1s ease-in-out;
-    -webkit-transition: background-color 1s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
+    -moz-transition: background-color 1.5s ease-in-out;
+    -webkit-transition: background-color 1.5 s ease-in-out;
     text-align: center;
     color: white;
     background: white; }
@@ -251,7 +253,8 @@ textarea {
   width: 90%;
   height: 200px;
   margin: 0 auto;
-  padding: 5px; }
+  padding: 5px;
+  color: #39A0ED; }
 
 label {
   width: 90%;
@@ -265,7 +268,9 @@ input[type='text'], input[type='email'] {
   width: 90%;
   margin: 0 auto;
   padding: 10px;
-  color: rgba(205, 205, 205, 0.95); }
+  color: #39A0ED; }
+  input[type='text']::placeholder, input[type='email']::placeholder {
+    color: rgba(205, 205, 205, 0.95); }
 
 .center-msg {
   text-align: center; }
@@ -352,7 +357,14 @@ input[type='submit'] {
   left: 0;
   height: 100px;
   border-top: 10px solid #fff;
-  background: #39A0ED; }
+  background: white;
+  transition: background-color 1s ease-in-out; }
+  .footer.b {
+    background: #39A0ED; }
+  .footer.g {
+    background: #59CD90; }
+  .footer.y {
+    background: #EEC25E; }
   .footer p {
     display: flex;
     height: 100px;

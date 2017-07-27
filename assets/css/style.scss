@@ -6,6 +6,9 @@ html {
 
 
 
+
+
+
 /* 
 font-family: 'Quattrocento', serif;
 font-family: 'Quattrocento Sans', sans-serif; 
@@ -44,6 +47,10 @@ a {
     color: #39A0ED;
     &:hover {
         color: #EE6352;
+    }
+    &:active {}
+    &:focus {
+        outline: none;
     }
 }
 
@@ -101,9 +108,9 @@ header {
         bottom: 0;
         width: auto;
         margin-left: 3.5%;
-        transition: background-color 1s ease-in-out;
-        -moz-transition: background-color 1s ease-in-out;
-        -webkit-transition: background-color 1s ease-in-out;
+        transition: background-color 1.5s ease-in-out;
+        -moz-transition: background-color 1.5s ease-in-out;
+        -webkit-transition: background-color 1.5 s ease-in-out;
         text-align: center;
         color: white;
         background: white;
@@ -328,6 +335,7 @@ textarea {
     height: 200px;
     margin: 0 auto;
     padding: 5px;
+    color: #39A0ED;
 }
 
 label {
@@ -345,7 +353,10 @@ input {
         width: 90%;
         margin: 0 auto;
         padding: 10px;
-        color: rgba(205, 205, 205, .95);
+        color: #39A0ED;
+        &::placeholder {
+            color: rgba(205, 205, 205, .95);
+        }
     }
 }
 
@@ -450,7 +461,17 @@ input[type='submit'] {
     left: 0;
     height: 100px;
     border-top: 10px solid #fff;
-    background: #39A0ED;
+    background: white;
+    transition: background-color 1s ease-in-out;
+    &.b {
+        background: #39A0ED;
+    }
+    &.g {
+        background: #59CD90;
+    }
+    &.y {
+        background: #EEC25E;
+    }
     p {
         display: flex;
         height: 100px;
