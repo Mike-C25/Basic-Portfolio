@@ -14,8 +14,9 @@ $(document).ready(function(){
 	lastPart = lastPart.substr(0, lastPart.lastIndexOf("."));
 	//console.log(lastPart);
 
-	console.log(pageTitle[lastPart]);
+	// console.log(pageTitle[lastPart]);
 
 	var colorvar = pageTitle[lastPart];
 	$(".title").addClass(colorvar);
+	$(".content-contain h3").addClass(colorvar);
 });

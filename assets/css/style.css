@@ -193,9 +193,7 @@ nav {
       margin: 0 auto;
       padding: 10px 0;
       text-align: center;
-      color: white;
-      border-bottom: 1px solid #cdcdcd;
-      transition: color 1s ease-in-out; }
+      border-bottom: 1px solid #cdcdcd; }
       #connect .content-contain h3.g {
         color: #59CD90; }
       #connect .content-contain h3.b {
