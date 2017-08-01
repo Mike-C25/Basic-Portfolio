@@ -1,8 +1,8 @@
 .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 
 
@@ -10,6 +10,11 @@ html {
     height: 100%;
     background: #F2F2F2;
 }
+
+
+
+
+
 
 
 /* 
@@ -30,15 +35,15 @@ COLORS:
 
 */
 
-$yel : #EEC25E;
+$yel: #EEC25E;
 
-$sal : #F79D84;
+$sal: #F79D84;
 
-$gr : #59CD90;
+$gr: #59CD90;
 
-$bl : #39A0ED;
+$bl: #39A0ED;
 
-$r : #EE6352;
+$r: #EE6352;
 
 body {
     font-family: 'Quattrocento', serif;
@@ -59,9 +64,7 @@ a {
     // transition: font .2s ease-in-out;
     text-decoration: none;
     color: $bl;
-    &:hover {
-
-    }
+    &:hover {}
     &:active {}
     &:focus {
         outline: none;
@@ -117,6 +120,7 @@ header {
     height: 150px;
     border-bottom: 2px solid #cdcdcd;
     background: white;
+    transition: all .2s ease-in-out;
     .title {
         position: absolute;
         bottom: 0;
@@ -128,6 +132,7 @@ header {
         text-align: center;
         color: white;
         background: white;
+        transition: all .2 ease-in-out;
         &.b {
             background: $bl;
         }
@@ -136,6 +141,11 @@ header {
         }
         &.y {
             background: $yel;
+        }
+        @media (max-width: 768px) {
+            top: 0;
+            width: 100%;
+            margin-left: 0;
         }
     }
     .head-container {
@@ -158,16 +168,26 @@ nav {
     bottom: 0;
     height: 70px;
     margin-right: 3.5%;
+    background: white;
+    @media (max-width: 768px) {
+        margin: 0px auto;
+        width: 100%;
+        text-align: center;
+    }
     ul {
         list-style-type: none;
         -webkit-margin-before: 0;
         -webkit-padding-start: 0;
+
         li {
             display: inline-block;
             margin: 20px 0;
             padding: 0 10px;
             cursor: pointer;
             border-right: 1px solid #cdcdcd;
+            @media (max-width: 768px) {
+                width: 25%;
+            }
             &:last-child {
                 padding-right: 0;
                 border-right: 0;
@@ -212,6 +232,9 @@ nav {
 #about-bio-img {
     float: left;
     margin: 0 20px 20px 0;
+    @media (max-width: 640px) {
+        width: 100%;
+    }
 }
 
 #about,
@@ -222,6 +245,12 @@ nav {
     margin: 3.5%;
     border: 1px solid #cdcdcd;
     background: white;
+    @media (max-width: 980px) {
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        width: 92%;
+    }
 }
 
 #about h1 {
@@ -256,12 +285,54 @@ nav {
     }
 }
 
+#connect-fixed {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    height: 50px;
+    width: 10px;
+    background: $bl;
+    color: white;
+    transition: all .33s ease-in-out;
+    @media(max-width: 900px) {
+        display: none;
+    }
+    @media(max-width: 640px) {
+        display: block;
+        &:hover {
+            width: 25px;
+        }
+    }
+    &.b {
+        background: $bl;
+    }
+    &.g {
+        background: $gr;
+    }
+    &.y {
+        background: $yel;
+    }
+}
+
 #connect {
+
+
     float: right;
     width: 25%;
     margin: 3.5%;
     border: 1px solid #cdcdcd;
     background: white;
+    @media(max-width: 980px) {
+        width: 30%;
+    }
+    @media (max-width: 768px) {
+        display: block;
+        width: 93%;
+    }
+    @media (max-width: 640px) {
+    
+    }
     .content-contain {
         margin: 20px 0;
         h3 {
@@ -279,6 +350,9 @@ nav {
             &.y {
                 color: $yel;
             }
+            @media (max-width: 768px) {
+                text-align: left;
+            }
         }
     }
 
@@ -287,6 +361,10 @@ nav {
         margin: 0 auto;
         margin-top: 20px;
         text-align: center;
+        @media (max-width: 768px) {
+            text-align: left;
+            width: 75%;
+        }
     }
     .icon {
         width: 65px;
@@ -305,9 +383,9 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     #connect .icon {
-        display: block;
+        display: inline-block;
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -425,14 +503,20 @@ input[type='submit'] {
     position: relative;
     float: left;
     overflow: hidden;
-    width: 50%;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
+    @media (max-width: 768px){
+        width: 50%;
+    }
+    @media (max-width: 640px){
+        width: 100%;
+    }
     &:hover .cover {
-        background: lighten($gr,20%);
+        background: lighten($gr, 20%);
     }
     img {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         transition: all .4s ease-in-out;
     }
@@ -441,7 +525,7 @@ input[type='submit'] {
         right: 0;
         bottom: 20px;
         left: 0;
-        width: 80%;
+        width: 85%;
         height: 20%;
         margin: 0 auto;
         background: $gr;

@@ -74,7 +74,8 @@ header {
   width: 100%;
   height: 150px;
   border-bottom: 2px solid #cdcdcd;
-  background: white; }
+  background: white;
+  transition: all .2s ease-in-out; }
   header .title {
     position: absolute;
     bottom: 0;
@@ -85,13 +86,19 @@ header {
     -webkit-transition: background-color 1.5 s ease-in-out;
     text-align: center;
     color: white;
-    background: white; }
+    background: white;
+    transition: all .2 ease-in-out; }
     header .title.b {
       background: #39A0ED; }
     header .title.g {
       background: #59CD90; }
     header .title.y {
       background: #EEC25E; }
+    @media (max-width: 768px) {
+      header .title {
+        top: 0;
+        width: 100%;
+        margin-left: 0; } }
   header .head-container {
     position: relative;
     max-width: 1200px;
@@ -108,7 +115,13 @@ nav {
   right: 0;
   bottom: 0;
   height: 70px;
-  margin-right: 3.5%; }
+  margin-right: 3.5%;
+  background: white; }
+  @media (max-width: 768px) {
+    nav {
+      margin: 0px auto;
+      width: 100%;
+      text-align: center; } }
   nav ul {
     list-style-type: none;
     -webkit-margin-before: 0;
@@ -119,6 +132,9 @@ nav {
       padding: 0 10px;
       cursor: pointer;
       border-right: 1px solid #cdcdcd; }
+      @media (max-width: 768px) {
+        nav ul li {
+          width: 25%; } }
       nav ul li:last-child {
         padding-right: 0;
         border-right: 0; }
@@ -151,6 +167,9 @@ nav {
 #about-bio-img {
   float: left;
   margin: 0 20px 20px 0; }
+  @media (max-width: 640px) {
+    #about-bio-img {
+      width: 100%; } }
 
 #about,
 #form,
@@ -160,6 +179,16 @@ nav {
   margin: 3.5%;
   border: 1px solid #cdcdcd;
   background: white; }
+  @media (max-width: 980px) {
+    #about,
+    #form,
+    #portfolio {
+      width: 50%; } }
+  @media (max-width: 768px) {
+    #about,
+    #form,
+    #portfolio {
+      width: 92%; } }
 
 #about h1 {
   margin-bottom: 20px;
@@ -187,12 +216,44 @@ nav {
 #about .content {
   margin: 40px; }
 
+#connect-fixed {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  height: 50px;
+  width: 10px;
+  background: #39A0ED;
+  color: white;
+  transition: all .33s ease-in-out; }
+  @media (max-width: 900px) {
+    #connect-fixed {
+      display: none; } }
+  @media (max-width: 640px) {
+    #connect-fixed {
+      display: block; }
+      #connect-fixed:hover {
+        width: 25px; } }
+  #connect-fixed.b {
+    background: #39A0ED; }
+  #connect-fixed.g {
+    background: #59CD90; }
+  #connect-fixed.y {
+    background: #EEC25E; }
+
 #connect {
   float: right;
   width: 25%;
   margin: 3.5%;
   border: 1px solid #cdcdcd;
   background: white; }
+  @media (max-width: 980px) {
+    #connect {
+      width: 30%; } }
+  @media (max-width: 768px) {
+    #connect {
+      display: block;
+      width: 93%; } }
   #connect .content-contain {
     margin: 20px 0; }
     #connect .content-contain h3 {
@@ -207,11 +268,18 @@ nav {
         color: #39A0ED; }
       #connect .content-contain h3.y {
         color: #EEC25E; }
+      @media (max-width: 768px) {
+        #connect .content-contain h3 {
+          text-align: left; } }
   #connect .image-contain {
     width: 100%;
     margin: 0 auto;
     margin-top: 20px;
     text-align: center; }
+    @media (max-width: 768px) {
+      #connect .image-contain {
+        text-align: left;
+        width: 75%; } }
   #connect .icon {
     width: 65px;
     height: 65px;
@@ -221,9 +289,9 @@ nav {
       height: 58px;
       padding: 3px; }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   #connect .icon {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px; } }
@@ -321,13 +389,19 @@ input[type='submit'] {
   position: relative;
   float: left;
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   margin-top: 30px;
   margin-bottom: 30px; }
+  @media (max-width: 768px) {
+    .card-container {
+      width: 50%; } }
+  @media (max-width: 640px) {
+    .card-container {
+      width: 100%; } }
   .card-container:hover .cover {
     background: #a7e5c4; }
   .card-container img {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     transition: all .4s ease-in-out; }
   .card-container .cover {
@@ -335,7 +409,7 @@ input[type='submit'] {
     right: 0;
     bottom: 20px;
     left: 0;
-    width: 80%;
+    width: 85%;
     height: 20%;
     margin: 0 auto;
     background: #59CD90;

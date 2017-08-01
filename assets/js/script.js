@@ -60,10 +60,18 @@ $(document).ready(function() {
     $(".title").addClass(colorvar);
     $(".content-contain h3").addClass(colorvar);
     $(".footer").addClass(colorvar);
+    $("#connect-fixed").addClass(colorvar);
 
     stuff();
 
 
+
+
+    var connectBox = document.getElementById("connect");
+    
+    $("connect-fixed").on('click', function(){
+    	
+    });
 
 
 
